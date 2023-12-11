@@ -1,6 +1,6 @@
 function getAllWords(str) {
-    // your code here
-    
+    let arr = atr.split(" ");
+    return arr;
 }
 
 let output = getAllWords('Radagast the Brown');
