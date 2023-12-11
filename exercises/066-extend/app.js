@@ -8,6 +8,10 @@ let obj2 = {
 };
 
 function extend(obj1, obj2) {
-    // your code here
-
+    for(let keys in obj2){
+        if(!(keys in obj1)){
+            obj1[keys] = obj2[keys];
+        }
+    }
+    return obj1;
 }
