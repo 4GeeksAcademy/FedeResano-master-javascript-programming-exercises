@@ -1,5 +1,8 @@
 function getLargestElementAtProperty(obj, key) {
-    // your code here
+  if (obj[key] && Array.isArray(obj[key])) {
+    return Math.max(...obj[key]);
+  }
+  return [];
     
 }
 
