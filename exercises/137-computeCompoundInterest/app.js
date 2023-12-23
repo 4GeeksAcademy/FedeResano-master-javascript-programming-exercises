@@ -1,6 +1,8 @@
 function computeCompoundInterest(principal, interestRate, compoundingFrequency, timeInYears) {
-  // your code here
-  
+	let A = principal * Math.pow((1 + interestRate / compoundingFrequency), timeInYears * compoundingFrequency);
+
+	return A;
+
 }
 
 let output = computeCompoundInterest(1500, .043, 4, 6);
