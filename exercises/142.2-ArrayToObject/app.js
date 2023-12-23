@@ -1,5 +1,9 @@
 function fromListToObject(array) {
-
+  let aux = {};
+  for (let i = 0; i < array.length; i++) {
+    aux[i[0]] = i[1];
+  }
+  return aux;
 
 }
 
