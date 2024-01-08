@@ -7,7 +7,7 @@ function getLargestNumberAmongMixedElements(arr) {
 		}
 	}
 
-	return isPositive(largestNumber > 0)? largestNumber : 0;
+	return isPositive(largestNumber == -9999999)? largestNumber : 0;
 }
 
 let output = getLargestNumberAmongMixedElements([3, 'word', 5, 'up', 3, 1]);

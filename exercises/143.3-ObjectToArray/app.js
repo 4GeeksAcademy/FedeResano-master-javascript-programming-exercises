@@ -1,6 +1,11 @@
 function convertObjectToList(obj) {
-  // your code here
-  
+	let arr = [];
+
+	for(let key in obj){
+		arr.push([key, obj[key]]);
+	}
+
+	return arr;
 }
 
 let output = convertObjectToList({ name: 'Holly', age: 35, role: 'producer' });

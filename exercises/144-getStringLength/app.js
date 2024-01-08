@@ -1,6 +1,11 @@
 function getStringLength(string) {
-    // your code here
-    
+  let strLength = 0;
+
+	for(let char in string){
+		strLength++;
+	}
+
+	return strLength;
 }
 
 let output = getStringLength('hello');

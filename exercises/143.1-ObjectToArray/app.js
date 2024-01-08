@@ -4,7 +4,6 @@ function getAllKeys(obj) {
     arr.push(element);
   }
   return arr
-
 }
 
 let output = getAllKeys({name: "Sam", age: 25, hasPets: true});

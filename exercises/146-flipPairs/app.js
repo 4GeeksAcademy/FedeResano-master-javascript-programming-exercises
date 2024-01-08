@@ -1,6 +1,15 @@
 function flipPairs(input) {
-    // your code here
-    
+ 	let reverseStr = ""; 
+	
+	for(let i = 0; i < input.length; i+=2){
+	if (i + 1 < input.length) {
+      reverseStr += input[i + 1];
+    }
+    reverseStr += input[i];
+  }	
+
+	return reverseStr;
+
 }
 
 let input = "Can you see what this is about?";
